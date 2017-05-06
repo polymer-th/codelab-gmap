@@ -45,7 +45,7 @@
       <template>
         <google-map latitude="13.742862" longitude="100.5479039" zoom="15">
           <google-map-marker latitude="13.742862" longitude="100.5479039"></google-map-marker>
-          <google-map-directions start-address="[[start]]" end-address="[[end]]"></google-map-directions>
+          <google-map-directions start-address="[[start]]" end-address="[[end]]" travel-mode="[[travelMode]]"></google-map-directions>
         </google-map>
         <paper-card elevation="2" style="position: absolute; left: 25px; bottom: 25px; z-index: 1;">
           <paper-icon-item>
@@ -56,20 +56,20 @@
             <iron-icon icon="search" item-icon></iron-icon>
             <paper-input label="End address" value="{{end}}"></paper-input>
           </paper-icon-item>
-          <paper-tabs selected="0">
-            <paper-tab>
+          <paper-tabs selected="{{travelMode}}" attr-for-selected="my-value">
+            <paper-tab my-value="DRIVING">
               <iron-icon icon="maps:directions-car"></iron-icon>
               <span>DRIVING</span>
             </paper-tab>
-            <paper-tab>
+            <paper-tab my-value="WALKING">
               <iron-icon icon="maps:directions-walk"></iron-icon>
               <span>WALKING</span>
             </paper-tab>
-            <paper-tab>
+            <paper-tab my-value="BICYCLING">
               <iron-icon icon="maps:directions-bike"></iron-icon>
               <span>BICYCLING</span>
             </paper-tab>
-            <paper-tab>
+            <paper-tab my-value="TRANSIT">
               <iron-icon icon="maps:directions-transit"></iron-icon>
               <span>TRANSIT</span>
             </paper-tab>
