@@ -1,0 +1,6 @@
+{
+  "name": "gmap",
+  "short_name": "gmap",
+  "start_url": "/",
+  "display": "standalone"
+}
