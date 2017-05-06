@@ -19,7 +19,9 @@
     <link rel="import" href="/bower_components/paper-item/paper-item.html">
     <link rel="import" href="/bower_components/paper-item/paper-icon-item.html">
     <link rel="import" href="/bower_components/paper-input/paper-input.html">
-    <link rel="import" href="/bower_components/paper-card/paper-card.html">   
+    <link rel="import" href="/bower_components/paper-card/paper-card.html"> 
+    <link rel="import" href="/bower_components/iron-icons/maps-icons.html">
+    <link rel="import" href="/bower_components/paper-tabs/paper-tabs.html">  
   </head>
   <body style="height: 100%; margin: 0;">
     <dom-bind>
@@ -37,6 +39,24 @@
             <iron-icon icon="search" item-icon></iron-icon>
             <paper-input label="End address" value="{{end}}"></paper-input>
           </paper-icon-item>
+          <paper-tabs selected="0">
+            <paper-tab>
+              <iron-icon icon="maps:directions-car"></iron-icon>
+              <span>DRIVING</span>
+            </paper-tab>
+            <paper-tab>
+              <iron-icon icon="maps:directions-walk"></iron-icon>
+              <span>WALKING</span>
+            </paper-tab>
+            <paper-tab>
+              <iron-icon icon="maps:directions-bike"></iron-icon>
+              <span>BICYCLING</span>
+            </paper-tab>
+            <paper-tab>
+              <iron-icon icon="maps:directions-transit"></iron-icon>
+              <span>TRANSIT</span>
+            </paper-tab>
+          </paper-tabs>
         </paper-card>
       </template>
     </dom-bind>
