@@ -2,7 +2,8 @@
   "name": "gmap",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0-rc.2"
+    "polymer": "Polymer/polymer#^2.0.0-rc.2",
+    "google-map": "GoogleWebComponents/google-map#672158b2f1ef66cdc165beb769c13d7b1e5c6c6c"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
