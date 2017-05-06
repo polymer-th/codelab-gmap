@@ -12,12 +12,29 @@
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
     <link rel="import" href="/bower_components/google-map/google-map.html">
-    <link rel="import" href="/bower_components/google-map/google-map-directions.html">    
+    <link rel="import" href="/bower_components/google-map/google-map-directions.html"> 
+
+    <link rel="import" href="/bower_components/iron-icon/iron-icon.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/bower_components/paper-item/paper-item.html">
+    <link rel="import" href="/bower_components/paper-item/paper-icon-item.html">
+    <link rel="import" href="/bower_components/paper-input/paper-input.html">
+    <link rel="import" href="/bower_components/paper-card/paper-card.html">   
   </head>
   <body style="height: 100%; margin: 0;">
     <google-map latitude="13.742862" longitude="100.5479039" zoom="15">
       <google-map-marker latitude="13.742862" longitude="100.5479039"></google-map-marker>
       <google-map-directions start-address="Park Ventures" end-address="สวนจตุจักร"></google-map-directions>
     </google-map>
+    <paper-card elevation="2" style="position: absolute; left: 25px; bottom: 25px; z-index: 1;">
+      <paper-icon-item>
+        <iron-icon icon="search" item-icon></iron-icon>
+        <paper-input label="Start address" value="San Francisco"></paper-input>
+      </paper-icon-item>
+      <paper-icon-item>
+        <iron-icon icon="search" item-icon></iron-icon>
+        <paper-input label="End address" value="Mountain View"></paper-input>
+      </paper-icon-item>
+    </paper-card>
   </body>
 </html>
